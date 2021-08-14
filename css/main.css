@@ -128,9 +128,15 @@ body{
     font-weight: 700;
 }
 
+.price__button:hover{
+    color:hsl(245, 75%, 65%);
+    text-decoration: none;
+}
+
 .btn{
     border-radius: 10px;
     border: none;
+    cursor: pointer;
     font-weight: 700;
     padding-block: 15px;
     width: 100%;
@@ -142,7 +148,15 @@ body{
     color: var(--very-pale-blue);
 }
 
+.card__payment:hover{
+    background-color: hsl(245, 75%, 65%);;
+}
+
 .card__cancel{
     background-color: transparent;
     color: var(--desaturated-blue);
+}
+
+.card__cancel:hover{
+    color: var(--dark-blue);
 }
