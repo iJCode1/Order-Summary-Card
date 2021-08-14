@@ -45,13 +45,15 @@ body{
     ;
     height: 70vh;
     max-width: 400px;
-    max-height: 700px;
+    min-height: 85vh;
+    max-height: 550px;
     overflow: hidden;
     width: 85vw;
 }
 
 .card__head{
     grid-area: head;
+    max-height: 400px;
     min-height: 150px;
 }
 
@@ -159,4 +161,19 @@ body{
 
 .card__cancel:hover{
     color: var(--dark-blue);
+}
+
+@media screen and (min-width: 900px){
+    body{
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-size: 100vw 50vh;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-height: 750px){
+    .card{
+        min-height: initial;
+    }
 }
